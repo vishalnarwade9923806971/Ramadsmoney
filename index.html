@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>जय श्री राम</title>
+
+<style>
+body{
+  margin:0;
+  font-family:"Noto Serif Devanagari", serif;
+  background: linear-gradient(#ff9933, #ff6600);
+  color:white;
+  text-align:center;
+  overflow-x:hidden;
+}
+
+/* Sections */
+.section{ padding:20px 10px; }
+.ad-box{ margin:18px auto; display:flex; justify-content:center; }
+
+/* 🌸 FLOWER RAIN */
+.flower{
+  position:fixed;
+  top:-40px;
+  pointer-events:none;
+  animation: flowerFall linear infinite;
+  z-index:1;
+}
+@keyframes flowerFall{
+  0%{ transform:translateY(-40px) rotate(0deg); opacity:1; }
+  100%{ transform:translateY(110vh) rotate(360deg); opacity:0; }
+}
+
+/* 🔥 RAM IMAGE + AD WRAP */
+.ram-ad-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  z-index:5;
+  position:relative;
+}
+
+/* RAM IMAGE ANIMATION */
+.ram-img{
+  width:90%;
+  max-width:320px;
+  border-radius:20px;
+  animation: glow 3s infinite ease-in-out, float 4s infinite ease-in-out;
+}
+
+@keyframes glow{
+  0%{ box-shadow:0 0 20px gold; }
+  50%{ box-shadow:0 0 45px white; }
+  100%{ box-shadow:0 0 20px gold; }
+}
+@keyframes float{
+  0%{ transform:translateY(0); }
+  50%{ transform:translateY(-12px); }
+  100%{ transform:translateY(0); }
+}
+
+/* UI */
+input{
+  padding:12px;
+  width:240px;
+  border-radius:8px;
+  border:none;
+  text-align:center;
+  font-size:16px;
+}
+button{
+  margin-top:12px;
+  padding:14px 28px;
+  font-size:18px;
+  border:none;
+  border-radius:30px;
+  background:#25D366;
+  color:white;
+}
+.message-box{
+  margin:15px auto;
+  padding:12px 16px;
+  background:rgba(255,255,255,0.15);
+  border-radius:12px;
+  font-size:16px;
+  line-height:1.5;
+  max-width:360px;
+}
+</style>
+</head>
+
+<body onclick="startAudio()">
+
+<!-- 🔊 AUDIO -->
+<audio id="shankh" src="shankh.mp3"></audio>
+<audio id="ram" src="ram.mp3" loop></audio>
+
+<!-- 🌸 FLOWER RAIN SCRIPT -->
+<script>
+const flowers=["🌸","🌺","🌼","🌷","💐"];
+function createFlower(){
+  let f=document.createElement("div");
+  f.className="flower";
+  f.innerText=flowers[Math.floor(Math.random()*flowers.length)];
+  f.style.left=Math.random()*100+"vw";
+  f.style.fontSize=(Math.random()*12+18)+"px";
+  f.style.animationDuration=(Math.random()*3+4)+"s";
+  document.body.appendChild(f);
+  setTimeout(()=>f.remove(),7000);
+}
+setInterval(createFlower,400);
+</script>
+
+<!-- 🔴 AD 1 : TOP -->
+<div class="ad-box">
+<script>(function(){
+  var atOptions={key:'3e773262b31b560e9ea0b688fa487ef1',format:'iframe',height:50,width:320,params:{}};
+  var s=document.createElement('script');
+  s.src='https://fertilitywailceramic.com/3e773262b31b560e9ea0b688fa487ef1/invoke.js';
+  document.currentScript.parentNode.appendChild(s);
+})();</script>
+</div>
+
+<!-- 🖼️ RAM IMAGE + 🔴 AD (MANDATORY NEAR IMAGE) -->
+<div class="section">
+  <div class="ram-ad-wrap">
+
+    <!-- RAM IMAGE -->
+    <img src="Ramji.jpg" class="ram-img" alt="श्री राम जी">
+
+    <!-- 🔴 AD 2 : IMAGE KE PASS -->
+    <div class="ad-box">
+    <script>(function(){
+      var atOptions={key:'4d10e9d2ba1199c06144dcd0e8bdff56',format:'iframe',height:250,width:300,params:{}};
+      var s=document.createElement('script');
+      s.src='https://fertilitywailceramic.com/4d10e9d2ba1199c06144dcd0e8bdff56/invoke.js';
+      document.currentScript.parentNode.appendChild(s);
+    })();</script>
+    </div>
+
+  </div>
+
+  <h2>🚩 जय श्री राम 🚩</h2>
+  <p>मर्यादा पुरुषोत्तम भगवान श्री राम</p>
+</div>
+
+<!-- ✨ MESSAGE -->
+<div class="message-box">
+✨ पुण्य कमाने का संदेश ✨<br>
+इस पावन लिंक को <b>5 लोगों</b> को साझा करें<br>
+और भगवान श्री राम का आशीर्वाद प्राप्त करें 🙏
+</div>
+
+<!-- 🔴 AD 3 -->
+<div class="ad-box">
+<script>(function(){
+  var atOptions={key:'e23487510690cf0ba92d0dd4120c4067',format:'iframe',height:300,width:160,params:{}};
+  var s=document.createElement('script');
+  s.src='https://fertilitywailceramic.com/e23487510690cf0ba92d0dd4120c4067/invoke.js';
+  document.currentScript.parentNode.appendChild(s);
+})();</script>
+</div>
+
+<!-- ✍️ NAME + SHARE -->
+<div class="section">
+  <input type="text" id="username" placeholder="अपना नाम लिखें"><br>
+  <button onclick="shareRam()">WhatsApp पर शेयर करें</button>
+  <p style="font-size:14px;">🔊 स्क्रीन पर टैप करें – ध्वनि चलेगी</p>
+</div>
+
+<!-- 🔴 AD 4 : NATIVE -->
+<div class="ad-box">
+<div id="container-17fc0cc317440d2e0bd8bbbdfdb08034"></div>
+<script async data-cfasync="false"
+src="https://fertilitywailceramic.com/17fc0cc317440d2e0bd8bbbdfdb08034/invoke.js"></script>
+</div>
+
+<!-- 🔴 AD 5 : POP / JS -->
+<script src="https://fertilitywailceramic.com/7d/c0/89/7dc089a485759d8392f8b6ab5fadee57.js"></script>
+
+<script>
+let audioStarted=false;
+function startAudio(){
+  if(audioStarted) return;
+  audioStarted=true;
+  document.getElementById("shankh").play();
+  setTimeout(()=>{ document.getElementById("ram").play(); },1200);
+}
+
+function shareRam(){
+  startAudio();
+  let name=document.getElementById("username").value.trim() || "आपका भक्त";
+  let msg=
+`🚩 जय श्री राम 🙏
+यह संदेश ${name} की तरफ़ से
+
+✨ पुण्य कमाने का अवसर ✨
+इस पावन लिंक को 5 लोगों को साझा करें
+और भगवान श्री राम का आशीर्वाद प्राप्त करें 🙏
+
+👇👇
+${window.location.href}`;
+  window.open("https://wa.me/?text="+encodeURIComponent(msg),"_blank");
+}
+</script>
+
+</body>
+</html>
